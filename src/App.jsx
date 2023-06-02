@@ -17,6 +17,8 @@ function App() {
 
   const [gastoEditar,setGastoEditar] = useState({})
 
+  const [commit,setComit] = useState(false)
+
   useEffect(()=>{
     if(Object.keys(gastoEditar).length > 0){
       setModal(true)
